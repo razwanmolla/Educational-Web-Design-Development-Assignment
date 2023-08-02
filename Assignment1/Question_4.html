@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Details Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    #container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      text-align: right;
+      background-color: #b0e0e6; /* Light blue */
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    #logo {
+      background-image: url("logo.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top right;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="logo"><a href="logo.jpg"></a></div>
+    <h1>Personal Details Management</h1>
+    <table>
+      <tr>
+        <th>Name:</th>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <th>Class:</th>
+        <td><input type="text" name="class"></td>
+      </tr>
+      <tr>
+        <th>Qualifications:</th>
+        <td><input type="text" name="qualifications"></td>
+      </tr>
+      <tr>
+        <th>Photo:</th>
+        <td><input type="file" name="photo"></td>
+      </tr>
+      <tr>
+        <th>Address:</th>
+        <td><textarea name="address" rows="4"></textarea></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

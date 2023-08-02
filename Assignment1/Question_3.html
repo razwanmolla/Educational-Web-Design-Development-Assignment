@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Country Capitals</title>
+  <script>
+    function showCapital() {
+      var selectBox = document.getElementById("countries");
+      var capitalDiv = document.getElementById("capital");
+
+      // Get the selected option's index
+      var selectedIndex = selectBox.selectedIndex;
+
+      // Get the capital corresponding to the selected index
+      var capitals = ["", "Dhaka", "London", "Paris", "Tokyo", "Beijing"];
+      var selectedCapital = capitals[selectedIndex];
+
+      // Display the capital next to the list
+      capitalDiv.innerHTML = "Capital: " + selectedCapital;
+    }
+  </script>
+  <style>
+    body{
+        
+        margin: 100px;
+        padding-top: 100px;
+        text-align: center;
+        background-color: aquamarine;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #capital {
+      font-size: 18px;
+      font-weight: bold;
+      color: #192c03; /* Eye-catching font color (e.g., orange) */
+    }
+  </style>
+</head>
+<body>
+  <h1>Country Capitals</h1>
+  <label for="countries">Select a country:</label>
+  <select id="countries" onchange="showCapital()">
+    <option value="">Select a country</option>
+    <option value="Bangladesh">Bangladesh</option>
+    <option value="UK">United Kingdom</option>
+    <option value="France">France</option>
+    <option value="Japan">Japan</option>
+    <option value="China">China</option>
+  </select>
+  <div id="capital"></div>
+</body>
+</html>

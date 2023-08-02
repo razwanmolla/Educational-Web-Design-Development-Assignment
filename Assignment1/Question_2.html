@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Three Frames Layout with Embedded Media</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-sidebar {
+      width: 20%;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+
+    .center-content {
+      flex-grow: 1;
+      padding: 10px;
+    }
+
+    .right-sidebar {
+      width: 20%;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </div>
+
+    <!-- Center Content -->
+    <div class="center-content">
+      <h1 id="section1">Section 1</h1>
+      <p>This is the main body content of the page.</p>
+
+      <!-- Embedded Audio -->
+      <h2>Embedded Audio</h2>
+      <audio controls>
+        <source src="path-to-audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h1 id="section2">Section 2</h1>
+      <p>This is another section of the page.</p>
+
+      <!-- Embedded Video -->
+      <h2>Embedded Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/g7xkVEWrX8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <h1 id="section3">Section 3</h1>
+      <p>This is the last section of the page.</p>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right-sidebar">
+      <h2>Remarks</h2>
+      <p>
+        Web Design Promotional Video is a web promo video template that helps to promote your startup, business, finance, and analytic. You can use our template for your launch to get your marketing goals. It’s perfect for demonstration your B2B product demo video, UI/UX animation, website design, user interface, service, showreels, and other website templates.
+        </p>
+    </div>
+  </div>
+</body>
+</html>
