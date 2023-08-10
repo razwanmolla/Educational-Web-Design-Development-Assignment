@@ -1,0 +1,28 @@
+.main-container {
+    border: 3px solid rgb(178, 37, 37);
+    height: auto;
+    width: 50%;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+    background-color: beige;
+}
+
+
+
+.fox-img {
+    width: 500px;
+    height: 180px;
+    border: 7px solid rgb(245, 178, 97);
+    margin-bottom: 10px;
+}
+
+.text-container {
+    width: 480px;
+    height: 220px;
+    border: 7px dashed rgba(208, 152, 84, 0.738);
+    overflow-y: scroll;
+    background-color: yellow;
+    padding: 0px 10px;
+
+}

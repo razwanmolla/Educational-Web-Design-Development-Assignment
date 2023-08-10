@@ -1,0 +1,98 @@
+<!-- Question: Implement a simple image gallery using HTML and CSS. The gallery should 
+display thumbnails of images and clicking on a thumbnail should display the 
+full-sized image in a lightbox overlay. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q3.css">
+    <title>Problem_3</title>
+</head>
+
+<body>
+  <h1>Gallery</h1>
+    <div class="gallery">
+        <a href="#lightbox1" class="thumbnail">
+            <img src="https://s01.sgp1.cdn.digitaloceanspaces.com/article/180448-tremxsydqk-1664200199.jpg"
+                alt="">
+        </a>
+        <a href="#lightbox2" class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1162&q=80"
+                alt="">
+        </a>
+        <a href="#lightbox3" class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1535083783855-76ae62b2914e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                alt="">
+        </a>
+        <a href="#lightbox4" class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1177&q=80"
+                alt="">
+        </a>
+        <a href="#lightbox5" class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2lsZGxpZmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </a>
+        <a href="#lightbox6" class="thumbnail">
+            <img src="https://cdn.firstcry.com/education/2022/04/25155522/1378635314-768x525.jpg" alt="">
+        </a>
+        <a href="#lightbox7" class="thumbnail">
+            <img src="https://assets.telegraphindia.com/telegraph/2021/Nov/1636002199_06.jpg" alt="">
+        </a>
+        <a href="#lightbox8" class="thumbnail">
+            <img src="https://www.balisafarimarinepark.com/wp-content/uploads/2022/09/animals.jpg"
+                alt="">
+        </a>
+        <a href="#lightbox9" class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1612833429806-9e1dfb3d026d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+        </a>
+
+    </div>
+    <div class="lightbox" id="lightbox1">
+        <a href="#" class="lightbox-close">Close</a>
+        <img src="https://s01.sgp1.cdn.digitaloceanspaces.com/article/180448-tremxsydqk-1664200199.jpg"
+            alt="">
+    </div>
+    <div class="lightbox" id="lightbox2">
+        <a href="#" class="lightbox-close">Close</a>
+        <img src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1162&q=80"
+            alt="">
+    </div>
+    <div class="lightbox" id="lightbox3">
+        <a href="#" class="lightbox-close">Close</a>
+        <img src="https://images.unsplash.com/photo-1535083783855-76ae62b2914e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+            alt="">
+    </div>
+    <div class="lightbox" id="lightbox4">
+        <a href="#" class="lightbox-close">Close</a>
+        <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1177&q=80"
+            alt="">
+    </div>
+    <div class="lightbox" id="lightbox5">
+        <a href="#" class="lightbox-close">Close</a>
+        <img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2lsZGxpZmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="lightbox" id="lightbox6">
+        <a href="#" class="lightbox-close">Close</a>
+        <img src="https://cdn.firstcry.com/education/2022/04/25155522/1378635314-768x525.jpg" alt="">
+    </div>
+    <div class="lightbox" id="lightbox7">
+        <a href="#" class="lightbox-close">Close</a>
+        <img src="https://assets.telegraphindia.com/telegraph/2021/Nov/1636002199_06.jpg" alt="">
+    </div>
+    <div class="lightbox" id="lightbox8">
+        <a href="#" class="lightbox-close">Close</a>
+        <img src="https://www.balisafarimarinepark.com/wp-content/uploads/2022/09/animals.jpg"
+            alt="">
+    </div>
+    <div class="lightbox" id="lightbox9">
+        <a href="#" class="lightbox-close">Close</a>
+        <img src="https://images.unsplash.com/photo-1612833429806-9e1dfb3d026d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            alt="">
+    </div>
+
+</body>
+
+</html>
